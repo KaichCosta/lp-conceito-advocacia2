@@ -1,0 +1,144 @@
+/* ==========================================================================
+   fixes.css — correções sobre o style.css
+   Carregar DEPOIS do style.css:
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="fixes.css">
+   ========================================================================== */
+
+/* 1. HERO / PARALLAX
+   Expressões como calc(var(--scroll-y) * 0.25px) são inválidas em CSS (px × px).
+   O JS já aplica o parallax via style inline, então as versões CSS são zeradas.
+   Inline vence a regra de folha de estilo, então isto não quebra o JS. */
+.hero__bg-scales {
+  transform: translate(-50%, -50%);
+  transition: none;
+}
+
+.hero__left-col,
+.hero__lawyer-cutout-wrapper,
+.hero__floating-card {
+  transform: none;
+}
+
+.hero__left-col {
+  transition: opacity 0.1s linear;
+}
+
+/* O keyframe floatSubtle também usava calc inválido e disputava o transform com o parallax */
+.hero__floating-card {
+  animation: none;
+}
+
+/* Imagem do advogado: PNG com fundo transparente, centralizado e sem corte */
+.hero__lawyer-img {
+  object-fit: contain;
+  object-position: center bottom;
+  max-height: 600px;
+}
+
+/* 2. CARROSSEL DE SERVIÇOS */
+/* O hover eleva o card em -10px; sem respiro no topo o overflow:auto corta a sombra e a borda */
+.services-track {
+  padding-top: 1.5rem;
+  margin-top: -1rem;
+}
+
+.service-card img {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+/* 3. PROCESSO: fundo com advogados (muito sutil, mas perceptível) */
+.process-bg-lawyers {
+  background-image:
+    linear-gradient(135deg, rgba(8, 14, 22, 0.86) 0%, rgba(12, 22, 34, 0.82) 100%),
+    url('assets/bg-advogados.jpg');
+  opacity: 1;
+}
+
+/* 4. TIMELINE
+   Os cards são deslocados por margin-top (e não por transform), para o JS medir a posição real. */
+.timeline-cards-cluster {
+  align-items: start;
+  padding-top: 80px;
+}
+
+.timeline-card.step-01,
+.timeline-card.step-02,
+.timeline-card.step-03,
+.timeline-card.step-04 {
+  transform: none;
+}
+
+.timeline-card.step-01 { margin-top: 200px; }
+.timeline-card.step-02 { margin-top: 130px; }
+.timeline-card.step-03 { margin-top: 65px; }
+.timeline-card.step-04 { margin-top: 0; }
+
+/* Hover: só eleva levemente, sem mexer na posição do degrau */
+.timeline-card.step-01:hover,
+.timeline-card.step-02:hover,
+.timeline-card.step-03:hover,
+.timeline-card.step-04:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+/* Estado "ativo" por toque (o JS adiciona .is-touch-active) */
+.timeline-card.is-touch-active {
+  background: #0E1D2E;
+  border-color: rgba(216, 166, 73, 0.5);
+}
+
+.timeline-card.is-touch-active .timeline-card__bg-img {
+  opacity: 0.22;
+}
+
+.timeline-card.is-touch-active .timeline-card__number,
+.timeline-card.is-touch-active .timeline-card__title {
+  color: #FFFFFF;
+}
+
+.timeline-card.is-touch-active .timeline-card__icon-badge {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: #0B1118;
+}
+
+.timeline-card.is-touch-active .timeline-card__desc {
+  max-height: 120px;
+  opacity: 1;
+  margin-top: 0.85rem;
+}
+
+/* 5. FORMULÁRIO: erro do checkbox via classe (o JS não usa mais outline inline) */
+.form-checkbox-group.has-error {
+  outline: 1px solid #EF4444;
+  outline-offset: 4px;
+  border-radius: 6px;
+}
+
+/* 6. ACESSIBILIDADE: respeitar "reduzir movimento" do sistema */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* 7. RESPONSIVO: tablet e mobile sem deslocamento em degrau (a linha some, como já era) */
+@media (max-width: 1100px) {
+  .timeline-cards-cluster {
+    padding-top: 0;
+  }
+
+  .timeline-card.step-01,
+  .timeline-card.step-02,
+  .timeline-card.step-03,
+  .timeline-card.step-04 {
+    margin-top: 0;
+  }
+}

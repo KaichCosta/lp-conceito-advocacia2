@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robert | Advocacia Estratégica & Soluções Jurídicas</title>
+  <meta name="description" content="Assessoria jurídica de alta performance para pessoas físicas e empresas. Soluções jurídicas estratégicas, defesa contenciosa e consultoria especializada.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fixes.css">
+</head>
+<body>
+
+  <!-- ==================== HEADER / NAVBAR ==================== -->
+  <header class="header" id="navbar">
+    <div class="header__container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="header__logo" aria-label="Robert Advocacia">
+        Robert<span class="logo__dot">.</span>
+      </a>
+
+      <!-- Navigation Pill Capsule -->
+      <nav class="header__nav" aria-label="Navegação Principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#sobre" class="nav__link active">Sobre</a></li>
+          <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li class="nav__item"><a href="#projetos" class="nav__link">Projetos</a></li>
+          <li class="nav__item"><a href="#processo" class="nav__link">Processo</a></li>
+          <li class="nav__item"><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action CTA -->
+      <div class="header__actions">
+        <a href="#contato" class="btn btn--gold btn--pill">
+          <span>Consulta Gratuita</span>
+          <span class="btn__icon-wrapper">
+            <svg class="btn__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu" aria-expanded="false">
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+          <span class="menu-toggle__line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (DARK THEME, STYLIZED SCALES & PARALLAX) ==================== -->
+  <section class="hero" id="hero">
+    
+    <!-- Stylized Scales of Justice Watermark Background (Centered Parallax) -->
+    <div class="hero__bg-scales" id="heroScales" aria-hidden="true">
+      <svg class="scales-svg" viewBox="0 0 900 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Central Pillar & Base -->
+        <path d="M450 60V560" stroke="url(#scalesGoldGrad)" stroke-width="5" stroke-linecap="round"/>
+        <path d="M370 560H530" stroke="url(#scalesGoldGrad)" stroke-width="8" stroke-linecap="round"/>
+        <path d="M410 590H490" stroke="url(#scalesGoldGrad)" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="450" cy="50" r="28" stroke="url(#scalesGoldGrad)" stroke-width="5" fill="rgba(216, 166, 73, 0.05)"/>
+        <circle cx="450" cy="50" r="10" fill="url(#scalesGoldGrad)"/>
+        
+        <!-- Main Crossbeam -->
+        <path d="M180 160H720" stroke="url(#scalesGoldGrad)" stroke-width="6" stroke-linecap="round"/>
+        
+        <!-- Left Scale Pan & Cords -->
+        <line x1="220" y1="160" x2="140" y2="340" stroke="url(#scalesGoldGrad)" stroke-width="3.5"/>
+        <line x1="220" y1="160" x2="300" y2="340" stroke="url(#scalesGoldGrad)" stroke-width="3.5"/>
+        <path d="M110 340C110 405 160 435 220 435C280 435 330 405 330 340H110Z" stroke="url(#scalesGoldGrad)" stroke-width="5" fill="rgba(216, 166, 73, 0.04)"/>
+        <ellipse cx="220" cy="340" rx="110" ry="16" stroke="url(#scalesGoldGrad)" stroke-width="3" fill="none"/>
+
+        <!-- Right Scale Pan & Cords (Slightly elevated for dynamic balance) -->
+        <line x1="680" y1="160" x2="600" y2="310" stroke="url(#scalesGoldGrad)" stroke-width="3.5"/>
+        <line x1="680" y1="160" x2="760" y2="310" stroke="url(#scalesGoldGrad)" stroke-width="3.5"/>
+        <path d="M570 310C570 375 620 405 680 405C740 405 790 375 790 310H570Z" stroke="url(#scalesGoldGrad)" stroke-width="5" fill="rgba(216, 166, 73, 0.04)"/>
+        <ellipse cx="680" cy="310" rx="110" ry="16" stroke="url(#scalesGoldGrad)" stroke-width="3" fill="none"/>
+
+        <!-- Ambient Glow Circles -->
+        <circle cx="450" cy="280" r="240" fill="url(#ambientCenterGlow)" />
+
+        <defs>
+          <linearGradient id="scalesGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ECC06C" stop-opacity="0.45"/>
+            <stop offset="50%" stop-color="#D8A649" stop-opacity="0.30"/>
+            <stop offset="100%" stop-color="#B58428" stop-opacity="0.12"/>
+          </linearGradient>
+          <radialGradient id="ambientCenterGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#D8A649" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#0B1118" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <!-- Hero Content Layout: 3-column / Central Cutout Architecture -->
+    <div class="hero__container">
+      
+      <!-- Left Column: Institutional Badge & Typography -->
+      <div class="hero__left-col" id="heroText">
+        <div class="badge badge--pill badge--glass">
+          <svg class="badge__icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <path d="m9 12 2 2 4-4"/>
+          </svg>
+          <span class="badge__text">REGULAMENTADO PELA OAB: 597055</span>
+        </div>
+
+        <h1 class="hero__title">
+          Seu Parceiro em <br>
+          <span class="text--gold">Soluções Jurídicas</span>
+        </h1>
+      </div>
+
+      <!-- Center: Lawyer Cutout with Transparent Background & Parallax -->
+      <div class="hero__center-col" id="heroPortraitCol">
+        <div class="hero__lawyer-cutout-wrapper" id="heroLawyerWrapper">
+          <img 
+            src="adv-hero.png" 
+            alt="Dr. Robert - Especialista Jurídico e Advogado Sênior" 
+            class="hero__lawyer-img"
+            id="heroLawyerImg"
+            loading="eager"
+          />
+          <div class="hero__lawyer-radial-glow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <!-- Right Column: Floating Review Card -->
+      <div class="hero__right-col" id="heroCardCol">
+        <div class="hero__floating-card" id="heroCard">
+          <div class="floating-card__header">
+            <div class="floating-card__logos">
+              <span class="brand-badge brand-badge--google">G</span>
+              <div class="rating-stars">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+              </div>
+            </div>
+            <div class="floating-card__score">
+              <span class="score-val">4.9</span>
+              <span class="reviews-count">2k+ Avaliações</span>
+            </div>
+          </div>
+          
+          <p class="floating-card__desc">
+            Orientação jurídica estratégica para suas demandas pessoais e corporativas.
+          </p>
+
+          <a href="#contato" class="btn btn--gold-sm btn--pill">
+            <span>Iniciar seu caso</span>
+            <span class="btn__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Metrics & Stats Ribbon (White Text & Exact Reference Surface) -->
+    <div class="hero__metrics-ribbon" id="heroMetrics">
+      <div class="hero__metrics-container">
+        
+        <!-- Stat 1 -->
+        <div class="metric-block">
+          <div class="metric-block__icon-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+          </div>
+          <div class="metric-block__text-group">
+            <span class="metric-number" data-target="10">10+</span>
+            <span class="metric-label">Anos de Experiência</span>
+          </div>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="metric-block">
+          <div class="metric-block__icon-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+          </div>
+          <div class="metric-block__text-group">
+            <span class="metric-number" data-target="95">95%</span>
+            <span class="metric-label">Taxa de Sucesso</span>
+          </div>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="metric-block">
+          <div class="metric-block__icon-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+            </svg>
+          </div>
+          <div class="metric-block__text-group">
+            <span class="metric-number" data-target="250">250+</span>
+            <span class="metric-label">Casos Concluídos</span>
+          </div>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="metric-block">
+          <div class="metric-block__icon-circle">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <circle cx="12" cy="11" r="3"/>
+            </svg>
+          </div>
+          <div class="metric-block__text-group">
+            <span class="metric-number" data-target="100">100%</span>
+            <span class="metric-label">Conformidade OAB</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==================== ABOUT ME SECTION (LIGHT THEME) ==================== -->
+  <section class="section section--light" id="sobre">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-grid__title-col">
+          <div class="badge badge--pill badge--light-accent">
+            <span>SOBRE MIM</span>
+          </div>
+          <h2 class="section-title section-title--dark">
+            Construído sob Integridade, Movido pela Justiça
+          </h2>
+        </div>
+
+        <div class="about-grid__desc-col">
+          <p class="about-text">
+            Somos um escritório jurídico focado no cliente, dedicado a resguardar seus direitos e entregar soluções jurídicas transparentes e orientadas a resultados de alto impacto.
+          </p>
+          <p class="about-text">
+            Com ampla experiência em demandas complexas, aliamos visão estratégica e execução técnica rigorosa para conduzir nossos clientes com total segurança, discrição e assertividade. Nosso compromisso vai muito além de um aconselhamento formal — entregamos uma defesa legítima, incisiva e intransigente dos seus interesses.
+          </p>
+
+          <div class="about-cta-wrapper">
+            <a href="#contato" class="btn btn--gold btn--pill">
+              <span>Consulta Gratuita</span>
+              <span class="btn__icon-wrapper">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION (CARDS COM ESTADO BRANCO & HOVER AZUL) ==================== -->
+  <section class="section section--dark services-section" id="servicos">
+    <div class="container">
+      
+      <div class="section-header services-header">
+        <div class="services-header__left">
+          <div class="badge badge--pill badge--dark-accent">
+            <span>MEUS SERVIÇOS</span>
+          </div>
+          <h2 class="section-title section-title--light">
+            Expertise de <span class="text--gold">Confiança</span>
+          </h2>
+        </div>
+
+        <div class="services-header__right">
+          <p class="services-subtitle">
+            Presto serviços jurídicos com excelência técnica comprovada e foco rigoroso em resultados assertivos.
+          </p>
+          <div class="carousel-controls">
+            <button class="carousel-btn" id="prevServiceBtn" aria-label="Serviço anterior">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-btn" id="nextServiceBtn" aria-label="Próximo serviço">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Carousel Container -->
+      <div class="services-carousel" id="servicesCarousel">
+        <div class="services-track" id="servicesTrack">
+          
+          <!-- Card 1: Corporate & Business Law -->
+          <div class="service-card" tabindex="0">
+            <div class="service-card__badge-row">
+              <span class="category-pill">EMPRESARIAL</span>
+            </div>
+            <h3 class="service-card__title">Direito Societário & Corporativo</h3>
+            <div class="service-card__img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80" 
+                alt="Reunião de Direito Corporativo" 
+                class="service-card__img"
+                loading="lazy"
+              />
+            </div>
+            <p class="service-card__desc">
+              Suporte legal para startups, PMEs e grandes companhias. Da constituição societária à estruturação de contratos e fusões...
+            </p>
+            <div class="service-card__footer">
+              <a href="#contato" class="icon-circle-btn" aria-label="Detalhes de Direito Societário">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Civil Litigation -->
+          <div class="service-card" tabindex="0">
+            <div class="service-card__badge-row">
+              <span class="category-pill">CONTENCIOSO</span>
+            </div>
+            <h3 class="service-card__title">Contencioso Cível Estratégico</h3>
+            <div class="service-card__img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=600&q=80" 
+                alt="Martelo e Tribunal de Justiça" 
+                class="service-card__img"
+                loading="lazy"
+              />
+            </div>
+            <p class="service-card__desc">
+              Atuação combativa em litígios cíveis, garantindo que seus direitos e patrimônio sejam protegidos em cada etapa judicial...
+            </p>
+            <div class="service-card__footer">
+              <a href="#contato" class="icon-circle-btn" aria-label="Detalhes de Contencioso Cível">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Criminal Defense -->
+          <div class="service-card" tabindex="0">
+            <div class="service-card__badge-row">
+              <span class="category-pill">DEFESA PENAL</span>
+            </div>
+            <h3 class="service-card__title">Defesa Criminal Especializada</h3>
+            <div class="service-card__img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1505664194779-8beaceb93744?auto=format&fit=crop&w=600&q=80" 
+                alt="Defesa Criminal Consultiva" 
+                class="service-card__img"
+                loading="lazy"
+              />
+            </div>
+            <p class="service-card__desc">
+              Defesa jurídica rigorosa e ágil para pessoas enfrentando acusações penais. Foco absoluto na proteção irrestrita de suas garantias...
+            </p>
+            <div class="service-card__footer">
+              <a href="#contato" class="icon-circle-btn" aria-label="Detalhes de Defesa Criminal">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 4: Family & Divorce Law -->
+          <div class="service-card" tabindex="0">
+            <div class="service-card__badge-row">
+              <span class="category-pill">FAMÍLIA</span>
+            </div>
+            <h3 class="service-card__title">Família & Planejamento Sucessório</h3>
+            <div class="service-card__img-box">
+              <img 
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" 
+                alt="Consultoria em Direito de Família" 
+                class="service-card__img"
+                loading="lazy"
+              />
+            </div>
+            <p class="service-card__desc">
+              Assessoria humanizada, discreta e confidencial para partilha de bens, divórcios, regimes familiares e governança sucessória...
+            </p>
+            <div class="service-card__footer">
+              <a href="#contato" class="icon-circle-btn" aria-label="Detalhes de Direito de Família">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="drag-indicator" id="dragIndicator" aria-hidden="true">
+          <span>&lt; ARRASTE &gt;</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LEGAL WORKS / CASOS DE SUCESSO ==================== -->
+  <section class="section section--light" id="projetos">
+    <div class="container">
+      
+      <div class="works-header">
+        <div class="works-header__title-box">
+          <div class="badge badge--pill badge--light-accent">
+            <span>CASOS DE SUCESSO</span>
+          </div>
+          <h2 class="section-title section-title--dark">
+            Alguns dos Meus Trabalhos Jurídicos
+          </h2>
+        </div>
+
+        <div class="works-header__action-box">
+          <p class="works-desc">
+            Explore uma criteriosa seleção de casos e causas jurídicas que conduzimos com êxito em diferentes áreas de atuação.
+          </p>
+          <a href="#contato" class="btn btn--gold-outline btn--pill">
+            <span>Ver Todos os Casos</span>
+            <span class="btn__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Cases Table (Linhas com estado padrão correto e hover dinâmico) -->
+      <div class="works-table-container">
+        <div class="works-table__header-row">
+          <span class="col-header col-title">Títulos</span>
+          <span class="col-header col-category">Categorias</span>
+          <span class="col-header col-date">Data</span>
+          <span class="col-header col-action" aria-label="Ação"></span>
+        </div>
+
+        <div class="works-table__body">
+          
+          <!-- Item 1 -->
+          <div class="work-row">
+            <div class="col-title">
+              <span class="work-row__title">Consultoria Corporativa M&A</span>
+            </div>
+            <div class="col-category">
+              <span class="row-tag">DIREITO SOCIETÁRIO</span>
+            </div>
+            <div class="col-date">
+              <span class="work-row__date">NOV 2025</span>
+            </div>
+            <div class="col-action">
+              <div class="row-hover-thumbnail">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=240&q=80" alt="Prévia consultoria corporativa">
+              </div>
+              <div class="work-row__btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="work-row">
+            <div class="col-title">
+              <span class="work-row__title">Disputa Imobiliária & Regularização</span>
+            </div>
+            <div class="col-category">
+              <span class="row-tag">DIREITO IMOBILIÁRIO</span>
+            </div>
+            <div class="col-date">
+              <span class="work-row__date">SET 2025</span>
+            </div>
+            <div class="col-action">
+              <div class="row-hover-thumbnail">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=240&q=80" alt="Prévia disputa imobiliária">
+              </div>
+              <div class="work-row__btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Defesa Penal Econômica (CORRIGIDO: Sem classe estática is-active!) -->
+          <div class="work-row">
+            <div class="col-title">
+              <span class="work-row__title">Defesa Penal Econômica</span>
+            </div>
+            <div class="col-category">
+              <span class="row-tag">DIREITO PENAL</span>
+            </div>
+            <div class="col-date">
+              <span class="work-row__date">JUL 2025</span>
+            </div>
+            <div class="col-action">
+              <div class="row-hover-thumbnail">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=240&q=80" alt="Prévia do caso penal">
+              </div>
+              <div class="work-row__btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="work-row">
+            <div class="col-title">
+              <span class="work-row__title">Acordo Sucessório Familiar</span>
+            </div>
+            <div class="col-category">
+              <span class="row-tag">DIREITO DE FAMÍLIA</span>
+            </div>
+            <div class="col-date">
+              <span class="work-row__date">MAI 2025</span>
+            </div>
+            <div class="col-action">
+              <div class="row-hover-thumbnail">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=240&q=80" alt="Prévia acordo familiar">
+              </div>
+              <div class="work-row__btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="work-row">
+            <div class="col-title">
+              <span class="work-row__title">Auditoria Contratual & Compliance</span>
+            </div>
+            <div class="col-category">
+              <span class="row-tag">DIREITO EMPRESARIAL</span>
+            </div>
+            <div class="col-date">
+              <span class="work-row__date">MAR 2025</span>
+            </div>
+            <div class="col-action">
+              <div class="row-hover-thumbnail">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=240&q=80" alt="Prévia auditoria contratual">
+              </div>
+              <div class="work-row__btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PROCESS SECTION (TIMELINE ONDULADA DOURADA & CARDS INTERATIVOS) ==================== -->
+  <section class="section section--dark process-section" id="processo">
+    
+    <!-- Subtle Background with Law Partners Meeting (Exactly as Reference) -->
+    <div class="process-bg-lawyers" aria-hidden="true"></div>
+
+    <div class="container process-container">
+      
+      <!-- Left Header Area -->
+      <div class="process-header-box">
+        <div class="badge badge--pill badge--dark-accent">
+          <span>PROCESSO</span>
+        </div>
+        <h2 class="section-title section-title--light process-title">
+          Processo Jurídico <span class="text--gold">Descomplicado</span>
+        </h2>
+        <p class="process-desc">
+          Sigo uma abordagem metodológica clara e estruturada para assegurar que cada caso seja conduzido com precisão, transparência e cuidado. Da consulta inicial até a resolução final, meu processo é desenhado para proteger seus interesses e alcançar resultados seguros.
+        </p>
+        <a href="#contato" class="btn btn--gold btn--pill process-cta-btn">
+          <span>Orçamento Gratuito</span>
+          <span class="btn__icon-wrapper">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+      <!-- Right Area: Interactive Wavy Timeline & Staggered Cards -->
+      <div class="timeline-wrapper">
+        
+        <!-- Wavy Golden Line SVG with Glowing Nodes -->
+        <svg class="timeline-wavy-line" viewBox="0 0 950 480" fill="none" preserveAspectRatio="none" aria-hidden="true">
+          <!-- Undulating Golden Path matching the reference curve -->
+          <path 
+            class="wavy-path" 
+            d="M 50 310 C 130 310, 150 180, 260 210 C 370 240, 390 120, 520 170 C 640 220, 680 50, 880 75" 
+            stroke="url(#timelineGoldGradient)" 
+            stroke-width="3.5" 
+            stroke-linecap="round"
+          />
+
+          <!-- Node 1: Connected to Step 01 -->
+          <g class="timeline-node node-1" transform="translate(140, 260)">
+            <circle cx="0" cy="0" r="14" fill="#0C1521" stroke="#D8A649" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="6" fill="#D8A649"/>
+          </g>
+
+          <!-- Node 2: Connected to Step 02 -->
+          <g class="timeline-node node-2" transform="translate(340, 220)">
+            <circle cx="0" cy="0" r="14" fill="#0C1521" stroke="#D8A649" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="6" fill="#D8A649"/>
+          </g>
+
+          <!-- Node 3: Connected to Step 03 -->
+          <g class="timeline-node node-3" transform="translate(560, 180)">
+            <circle cx="0" cy="0" r="14" fill="#0C1521" stroke="#D8A649" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="6" fill="#D8A649"/>
+          </g>
+
+          <!-- Node 4: Connected to Step 04 -->
+          <g class="timeline-node node-4" transform="translate(780, 75)">
+            <circle cx="0" cy="0" r="14" fill="#0C1521" stroke="#D8A649" stroke-width="2.5"/>
+            <circle cx="0" cy="0" r="6" fill="#D8A649"/>
+          </g>
+
+          <defs>
+            <linearGradient id="timelineGoldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#ECC06C"/>
+              <stop offset="50%" stop-color="#D8A649"/>
+              <stop offset="100%" stop-color="#B58428"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <!-- Staggered Timeline Cards (White by default, Navy Blue + Image on Hover) -->
+        <div class="timeline-cards-cluster">
+          
+          <!-- Step 01 (Positioned Bottom-Left) -->
+          <div class="timeline-card step-01" tabindex="0">
+            <div class="timeline-card__bg-img" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="timeline-card__top">
+              <span class="timeline-card__number">01.</span>
+              <div class="timeline-card__icon-badge">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </div>
+            </div>
+            <h3 class="timeline-card__title">Consulta Inicial</h3>
+            <p class="timeline-card__desc">
+              Diagnóstico aprofundado dos fatos, análise probatória preliminar e entendimento das metas do cliente.
+            </p>
+          </div>
+
+          <!-- Step 02 (Center-Left, Active Reference Style on Hover) -->
+          <div class="timeline-card step-02" tabindex="0">
+            <div class="timeline-card__bg-img" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="timeline-card__top">
+              <span class="timeline-card__number">02.</span>
+              <div class="timeline-card__icon-badge">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="18" y1="20" x2="18" y2="10"></line>
+                  <line x1="12" y1="20" x2="12" y2="4"></line>
+                  <line x1="6" y1="20" x2="6" y2="14"></line>
+                </svg>
+              </div>
+            </div>
+            <h3 class="timeline-card__title">Desenvolvimento da Estratégia</h3>
+            <p class="timeline-card__desc">
+              Elaboramos um plano de ação jurídico personalizado e sob medida para seu setor empresarial ou demanda individual.
+            </p>
+          </div>
+
+          <!-- Step 03 (Center-Right Elevated) -->
+          <div class="timeline-card step-03" tabindex="0">
+            <div class="timeline-card__bg-img" style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="timeline-card__top">
+              <span class="timeline-card__number">03.</span>
+              <div class="timeline-card__icon-badge">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="timeline-card__title">Execução & Defesa Jurídica</h3>
+            <p class="timeline-card__desc">
+              Atuação combativa em negociações, mediações ou tribunais, com relatórios constantes do andamento do caso.
+            </p>
+          </div>
+
+          <!-- Step 04 (Top-Right High Elevation) -->
+          <div class="timeline-card step-04" tabindex="0">
+            <div class="timeline-card__bg-img" style="background-image: url('https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=500&q=80');"></div>
+            <div class="timeline-card__top">
+              <span class="timeline-card__number">04.</span>
+              <div class="timeline-card__icon-badge">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+            </div>
+            <h3 class="timeline-card__title">Resolução do Caso</h3>
+            <p class="timeline-card__desc">
+              Conclusão definitiva com segurança jurídica, entrega de resultados sólidos e proteção patrimonial de longo prazo.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION & FORM ==================== -->
+  <section class="section section--light contact-section" id="contato">
+    <div class="container">
+      
+      <div class="contact-header">
+        <div class="contact-header__title-box">
+          <div class="badge badge--pill badge--light-accent">
+            <span>CONTATO</span>
+          </div>
+          <h2 class="section-title section-title--dark">
+            Vamos Conversar Sobre Seu Caso Jurídico
+          </h2>
+          <a href="#contato-form" class="btn btn--gold-outline btn--pill contact-header__cta">
+            <span>Fale Conosco</span>
+            <span class="btn__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                <line x1="7" y1="7" x2="17" y2="17"></line>
+                <polyline points="7 17 17 17 17 7"></polyline>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="contact-header__video-box">
+          <div class="profile-video-card" id="profileVideoCard">
+            <img 
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" 
+              alt="Advogado Robert em vídeo de apresentação" 
+              class="profile-video-card__img"
+            />
+            <button class="profile-video-card__play" aria-label="Assistir apresentação do Dr. Robert">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-grid">
+        
+        <div class="contact-info">
+          <h3 class="contact-info__title">Atendimento Direto</h3>
+          <p class="contact-info__desc">
+            Possui uma questão urgente ou busca orientação consultiva especializada? Entre em contato agora para agendar uma consulta individual e obter respostas precisas e confidenciais.
+          </p>
+
+          <div class="contact-whatsapp-box">
+            <span class="whatsapp-label">Converse pelo WhatsApp</span>
+            <a href="https://wa.me/5511987654321" target="_blank" rel="noopener noreferrer" class="whatsapp-number">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>+55 (11) 98765-4321</span>
+            </a>
+          </div>
+
+          <div class="contact-guarantee">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>Sigilo Profissional Absoluto garantido pelo Código de Ética e Disciplina da OAB.</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper" id="contato-form">
+          <form class="contact-form" id="mainContactForm" novalidate>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" class="form-label">Nome Completo</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome" required />
+                <span class="form-error">Por favor, informe seu nome completo.</span>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Endereço de E-mail</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="email@exemplo.com" required />
+                <span class="form-error">Por favor, insira um e-mail válido.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone" class="form-label">Número de Telefone</label>
+                <input type="tel" id="phone" name="phone" class="form-input" placeholder="(11) 99999-9999" required />
+                <span class="form-error">Informe um telefone de contato.</span>
+              </div>
+              <div class="form-group">
+                <label for="service" class="form-label">Área Jurídica de Interesse</label>
+                <div class="select-wrapper">
+                  <select id="service" name="service" class="form-select" required>
+                    <option value="" disabled selected>Selecione um serviço</option>
+                    <option value="empresarial">Direito Societário & Corporativo</option>
+                    <option value="contencioso">Contencioso Cível Estratégico</option>
+                    <option value="penal">Defesa Penal Especializada</option>
+                    <option value="familia">Família & Planejamento Sucessório</option>
+                    <option value="contratual">Auditoria Contratual & Compliance</option>
+                    <option value="outro">Outra Demanda Específica</option>
+                  </select>
+                  <svg class="select-chevron" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label">Assunto</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Breve resumo da sua demanda" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">Sua Mensagem</label>
+              <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Descreva os detalhes essenciais para que possamos avaliar seu caso com antecedência..." required></textarea>
+            </div>
+
+            <div class="form-checkbox-group">
+              <label class="custom-checkbox">
+                <input type="checkbox" id="confirmData" name="confirmData" required />
+                <span class="checkbox-box">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </span>
+                <span class="checkbox-text">Confirmo que as informações fornecidas são autênticas e precisas.</span>
+              </label>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn--gold btn--pill form-btn" id="submitFormBtn">
+                <span>Solicitar Consulta</span>
+                <span class="btn__icon-wrapper">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </span>
+              </button>
+            </div>
+
+            <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER SECTION ==================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-col footer-col--brand">
+          <h3 class="footer-title">Gostou do Que Viu?</h3>
+          <p class="footer-desc">
+            Auxiliamos empresas e indivíduos a resolverem litígios com assertividade, estruturação contratual sólida e acompanhamento jurídico transparente, ágil e focado em vitórias.
+          </p>
+          <a href="#contato" class="footer-cta-link">
+            <span>Vamos trabalhar juntos</span>
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5">
+              <line x1="7" y1="17" x2="17" y2="7"></line>
+              <polyline points="7 7 17 7 17 17"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Links Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#sobre">Sobre Nós</a></li>
+            <li><a href="#servicos">Áreas de Atuação</a></li>
+            <li><a href="#projetos">Casos de Sucesso</a></li>
+            <li><a href="#processo">Como Trabalhamos</a></li>
+            <li><a href="#contato">Fale Conosco</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Institucional</h4>
+          <ul class="footer-links">
+            <li><a href="#privacidade">Política de Privacidade</a></li>
+            <li><a href="#termos">Termos & Condições</a></li>
+            <li><a href="#etica">Código de Ética OAB</a></li>
+            <li><a href="#compliance">Portal de Compliance</a></li>
+            <li><a href="#suporte">Canal de Atendimento</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Fale Comigo</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <a href="mailto:contato@robertadvocacia.com.br">contato@robertadvocacia.com.br</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <a href="tel:+551134877698">+55 (11) 3487-7698</a>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>Av. Paulista, 1000 - Bela Vista, São Paulo - SP</span>
+          </div>
+
+          <div class="footer-social-row">
+            <a href="#" class="social-circle" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="Twitter / X">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="subfooter">
+        <p>&copy; 2026 Robert Advocacia & Soluções Jurídicas. Todos os direitos reservados. OAB/SP 597.055.</p>
+        <div class="subfooter-status">
+          <span class="status-indicator"></span>
+          <span>Plantão Jurídico Ativo para Urgências</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Video Presentation Modal -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="video-modal__backdrop" id="videoModalBackdrop"></div>
+    <div class="video-modal__content">
+      <button class="video-modal__close" id="videoModalClose" aria-label="Fechar Vídeo">&times;</button>
+      <div class="video-modal__body">
+        <div class="video-placeholder">
+          <svg viewBox="0 0 24 24" width="48" height="48" fill="var(--color-gold)">
+            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+          </svg>
+          <p>Apresentação Institucional do Dr. Robert</p>
+          <span class="video-meta">Vídeo demonstrativo em alta definição (1080p)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
